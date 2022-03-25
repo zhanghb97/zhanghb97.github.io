@@ -1,1 +1,5 @@
 theme: jekyll-theme-architect
+title: Buddy Compiler
+description: Domain Specific Compiler Infrastructure
+markdown: kramdown
+url: "https://zhanghb97.github.io"
