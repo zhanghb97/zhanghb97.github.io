@@ -1,4 +1,5 @@
-theme: jekyll-theme-architect
+# theme: jekyll-theme-architect
+remote_theme: just-the-docs/just-the-docs
 title: Buddy Compiler
 description: Domain Specific Compiler Infrastructure
 markdown: kramdown
