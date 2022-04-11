@@ -5,3 +5,4 @@ description: Domain Specific Compiler Infrastructure
 markdown: kramdown
 url: "https://zhanghb97.github.io"
 sidebar: true
+color_scheme: buddy
