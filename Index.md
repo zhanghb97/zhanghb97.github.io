@@ -2,57 +2,101 @@
 layout: default
 title: Home
 nav_order: 1
+description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
+permalink: /
 ---
 
-# Home
+# Focus on writing good documentation.
+{: .fs-9 }
 
-This is a temporary site to test home page of buddy compiler. 
+Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
+{: .fs-6 .fw-300 }
 
-Buddy compiler is a domain-specific compiler infrastructure. We use "buddy" as the name because our infrastructure intends to be the buddy system to help users easily design, implement, and evaluate domain-specific compilers.
-The buddy compiler community welcomes any ideas. Join us through this slack link if you want to contribute.
+[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/just-the-docs/just-the-docs){: .btn .fs-5 .mb-4 .mb-md-0 }
 
-## Motivation
+---
 
-With the development of domain-specific architectures and languages, the need for compilers has grown, and the research of compiler technology has reached a golden age. Implementing an end-to-end compiler from scratch for a new DSA or DSL is difficult. Our goal is to provide a framework to help users quickly implement a domain-specific compiler, including DSL frontend support, IR-level optimization, and DSA backend code generation. 
+## Getting started
 
-MLIR is a revolutionary multi-level intermediate representation and compiler infrastructure that provides reusable and extensible mechanisms. RISC-V is open-sourced instruction set architecture with a modular design, allowing custom extensions. MLIR and RISC-V have extensible concepts for domain-specific design and maximize the reuse of base parts. We thus particularly embrace the MLIR and RISC-V ecosystems for our framework and believe MLIR is a perfect companion for compiler development towards the RISC-V backend. As for the DSL frontend support, we do not have a clear plan and looking forward to more discussion.
+### Dependencies
 
-Our work is still in the very early stages, and we are currently exploring IR-level optimization and building infrastructures. For more information, please see our work plan and open projects.
+Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generator. View the [quick start guide](https://jekyllrb.com/docs/) for more information. Just the Docs requires no special plugins and can run on GitHub Pages' standard Jekyll compiler. The [Jekyll SEO Tag plugin](https://github.com/jekyll/jekyll-seo-tag) is included by default (no need to run any special installation) to inject SEO and open graph metadata on docs pages. For information on how to configure SEO and open graph metadata visit the [Jekyll SEO Tag usage guide](https://jekyll.github.io/jekyll-seo-tag/usage/).
 
-## Overview
+### Quick start: Use as a GitHub Pages remote theme
 
-Currently, the buddy compiler contains the following two modules:
+1. Add Just the Docs to your Jekyll site's `_config.yml` as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)
 
-- buddy-mlir (get started from here)
+```yaml
+remote_theme: just-the-docs/just-the-docs
+```
 
-The buddy-mlir is the MLIR-based domain-specific compiler framework. We use MLIR as the cornerstone and explore how to build a domain-specific compiler on top of it. Our research in this framework includes domain-specific IR and optimization, domain-specific compiler frontend design and implementation, MLIR-related development tools, etc.
+<small>You must have GitHub Pages enabled on your repo, one or more Markdown files, and a `_config.yml` file. [See an example repository](https://github.com/pmarsceill/jtd-remote)</small>
 
-- buddy-benchmark (get started from here)
+### Local installation: Use the gem-based theme
 
-The buddy-benchmark is a benchmark framework to evaluate domain-specific compilers and libraries. Evaluation is an essential step in developing a compiler. We can hardly find a unified benchmark to evaluate compiler or optimization in some domains. We thus propose an extensible benchmark framework to collect domain-specific evaluation cases.
+1. Install the Ruby Gem
+  ```bash
+  $ gem install just-the-docs
+  ```
+  ```yaml
+  # .. or add it to your your Jekyll site’s Gemfile
+  gem "just-the-docs"
+  ```
 
-The graph below shows the modules of the buddy compiler.
+2. Add Just the Docs to your Jekyll site’s `_config.yml`
+  ```yaml
+  theme: "just-the-docs"
+  ```
 
-![overview](./Images/overview.png)
+3. _Optional:_ Initialize search data (creates `search-data.json`)
+  ```bash
+  $ bundle exec just-the-docs rake search:init
+  ```
 
-## Workflow
+3. Run you local Jekyll server
+  ```bash
+  $ jekyll serve
+  ```
+  ```bash
+  # .. or if you're using a Gemfile (bundler)
+  $ bundle exec jekyll serve
+  ```
 
-Currently, our efforts are mostly at the IR level, so we provide domain-specific IR operations and functions, wrap them into the C++ library, and use CPU with SIMD extensions as the target machine. Here we demonstrate an end-to-end image processing and classification application of our framework:
+4. Point your web browser to [http://localhost:4000](http://localhost:4000)
 
-- Read image into MemRef container.
-- Perform image processing.
-- Classify the image.
-- Evaluate the performance.
+If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) so that you can more easily work in your development environment.
 
-What should be done to support this end-to-end application?
+### Configure Just the Docs
 
-- Provide domain-specific data structure derived from the MemRef container.
-- Define domain-specific MLIR dialect (operations, types, attributes).
-- Implement lowering passes and optimizations towards the domain-specific MLIR dialect.
-- Import the deep learning model into the MLIR function.
-- Define domain-specific functions with MLIR operations.
-- Compile the MLIR files into object files.
-- Wrap C++ interfaces around the MLIR functions.
-- Write a domain-specific application in C++ with the interfaces.
-- Compile the main program and link the object files.
-- Run the program and evaluate the performance.
+- [See configuration options]({{ site.baseurl }}{% link docs/configuration.md %})
+
+---
+
+## About the project
+
+Just the Docs is &copy; 2017-{{ "now" | date: "%Y" }} by [Patrick Marsceill](http://patrickmarsceill.com).
+
+### License
+
+Just the Docs is distributed by an [MIT license](https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt).
+
+### Contributing
+
+When contributing to this repository, please first discuss the change you wish to make via issue,
+email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/just-the-docs/just-the-docs#contributing).
+
+#### Thank you to the contributors of Just the Docs!
+
+<ul class="list-style-none">
+{% for contributor in site.github.contributors %}
+  <li class="d-inline-block mr-1">
+     <a href="{{ contributor.html_url }}"><img src="{{ contributor.avatar_url }}" width="32" height="32" alt="{{ contributor.login }}"/></a>
+  </li>
+{% endfor %}
+</ul>
+
+### Code of Conduct
+
+Just the Docs is committed to fostering a welcoming community.
+
+[View our Code of Conduct](https://github.com/just-the-docs/just-the-docs/tree/main/CODE_OF_CONDUCT.md) on our GitHub repository.
