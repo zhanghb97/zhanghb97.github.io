@@ -3,3 +3,4 @@ title: Buddy Compiler
 description: Domain Specific Compiler Infrastructure
 markdown: kramdown
 url: "https://zhanghb97.github.io"
+sidebar: true
