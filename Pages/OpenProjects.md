@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Tutorials
+title: Open Projects
 nav_order: 2
 ---
 
-# Tutorials
+# Open Projects
 
 TODO
