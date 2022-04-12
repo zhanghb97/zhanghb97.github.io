@@ -12,37 +12,72 @@ Currently, we provide open projects in the following directions.
 
 ### Project 1-1: Adding an Compiler Stack for RISC-V Costom Extensions.
 
-- **Description**:
+- **Description**: Both RISC-V and MLIR are modular and extensible, so we hope to use LLVM/MLIR to implement an integrated compiler stack infrastructure for RISC-V custom ISA.
 - **Expected outcomes**: 
-- **Skills required**:  Good C/C++ skills, basic understanding of MLIR, LLVM, RISC-V.
+    - RISC-V custom ISA registration mechanism. 
+    - Integrated MLIR/LLVM code generation mechanism.
+    - The connection of the above two mechanisms.
+- **Skills required**:  
+    - Good C++ coding skills.
+    - Basic understanding of MLIR and LLVM.
+    - Basic understanding of RISC-V.
 - **Possible mentors**: Hongbin Zhang
 - **Difficulty rating**: Hard - Extremely Hard
 
-### Project 1-2: Adding Morphological Transformations in DIP Dialect.
+### Project 1-2: Adding Morphological Transformations in DIP (Digital Image Processing) Dialect.
 
 - **Description**: There are 7 morphological operations which can be implemented for this project: Erosion, Dilation, Opening, Closing, Morphological Gradient, Top Hat, and Black Hat. 
 - **Expected outcomes**: 1～2 morphological transformation operations and lowering passes.
-- **Skills required**:  Good C/C++ skills, basic understanding of MLIR, Image Processing domain knowledge
+- **Skills required**:  
+    - Good C++ coding skills.
+    - Basic understanding of MLIR.
+    - Basic understanding of image processing.
 - **Possible mentors**: Prathamesh Tagore
+- **Difficulty rating**: Medium - Hard
+
+### Project 1-3: Adding the Basic Support for PC (Point Cloud) Dialect.
+
+- **Description**: This project intends to add the abstraction for point cloud in IR level. Participants should add point cloud data structure, implement the PC dialect, and complete an end to end example.
+- **Expected outcomes**: 
+    - Data container for the point cloud.
+    - Implement the PC dialect.
+    - Choose an operation and implement the lowering pass.
+    - Complete an end-to-end example.
+    - Add a benchmark for the corresponding operaion.
+- **Skills required**:  
+    - Good C++ coding skills.
+    - Basic understanding of MLIR.
+    - Basic understanding of point cloud.
+- **Possible mentors**: Hongbin Zhang
 - **Difficulty rating**: Medium - Hard
 
 ## 2 - Performance Optimization
 
 ### Project 2-1: Vectorizing Convolution or GEMM Operations.
 
-- **Description**: Optimize existing convolution and GEMM operations using vectorization. You can refer to the algorithm [here](https://github.com/opencv/opencv/blob/4.x/modules/dnn/src/layers/layers_common.simd.hpp).
-- **Expected outcomes**: Vectorization passes for convolution or GEMM operations.
-- **Skills required**: Good C++ coding skills, basic understanding of MLIR and vectorization.
+- **Description**: Optimize existing convolution and GEMM operations using vectorization. Participants can refer to the algorithm [here](https://github.com/opencv/opencv/blob/4.x/modules/dnn/src/layers/layers_common.simd.hpp).
+- **Expected outcomes**: 
+    - Add a vectorization passes for convolution or GEMM operations.
+    - Add a benchmark for the optimization pass.
+- **Skills required**: 
+    - Good C++ coding skills.
+    - Basic understanding of MLIR.
+    - Basic understanding of vectorization.
 - **Possible mentors**: Liutong Han, Hongbin Zhang
 - **Difficulty rating**: Hard - Extremely Hard
 
 ## 3 - Benchark Framework
 
-### Project 3-1: Adding More Deep Learning Benchmark Cases in buddy-benchmark.
+### Project 3-1: Adding More Deep Learning Benchmark Cases and Items in buddy-benchmark.
 
-- **Description**: 
+- **Description**: There are already some deep learning benchmarks in buddy-benchmark. This project hopes to add more comparison deep learning compiler toolchain (tvm, iree, onnx-mlir, torch-mlir, etc.) and comparison items (e.g. peak memory allocation) on this basis.
 - **Expected outcomes**: 
-- **Skills required**:
+    - Add more cases in model level benchmark.
+    - Add model level benchmark for tvm, iree, onnx-mlir, torch-mlir, etc.
+    - Add more comparison items (e.g. peak memory allocation)
+- **Skills required**: 
+    - Some deep learning compiler experience.
+    - Basic understanding of MLIR.
 - **Possible mentors**: Hongbin Zhang
 - **Difficulty rating**: Medium - Hard
 
@@ -50,8 +85,13 @@ Currently, we provide open projects in the following directions.
 
 ### Project 4-1: Improving the Testing Framework for buddy-mlir and buddy-benchmark.
 
-- **Description**: 
+- **Description**: The buddy compiler (buddy-mlir and buddy-benchmark) contains many levels of work (IR, API, runtime, etc.), and we need to test each level to ensure the correctness. Currently, there are some basic tests in the project, and this project needs to add more test cases and design automated test methods.
 - **Expected outcomes**:
+    - Add more test cases for each level of work.
+    - Design an automated test methods.
 - **Skills required**:
-- **Possible mentors**: Hongbin Zhang
+    - Good C++ coding skills.
+    - Basic understanding of MLIR.
+    - Basic software testing knowledge and experience.
+- **Possible mentors**: Hongbin Zhang, Prathamesh Tagore
 - **Difficulty rating**: Easy - Medium
