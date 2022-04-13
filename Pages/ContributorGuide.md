@@ -103,7 +103,7 @@ systems and you may need to tweak them for Windows systems.
     ninja check-mlir
     ```
 
- ### Build buddy-mlir : 
+### Build buddy-mlir : 
 
  ```shell
  cd ..
