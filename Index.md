@@ -8,9 +8,9 @@ permalink: /
 
 # Buddy Compiler
 
-This is a temporary site to test home page of buddy compiler. 
+This is a temporary site to test the home page of the buddy compiler. 
 
-Buddy compiler is a domain-specific compiler infrastructure. We use "buddy" as the name because our infrastructure intends to be the buddy system to help users easily design, implement, and evaluate domain-specific compilers.
+The buddy compiler is a domain-specific compiler infrastructure. We use "buddy" as the name because our infrastructure intends to be the buddy system to help users easily design, implement, and evaluate domain-specific compilers.
 The buddy compiler community welcomes any ideas. Join us through this [slack link](https://join.slack.com/t/buddycompiler/shared_invite/zt-13y6ibj4j-n6MQ8u9yCUPltCCDhLEmXg) if you want to contribute.
 
 ## Motivation
@@ -25,11 +25,11 @@ Our work is still in the very early stages, and we are currently exploring IR-le
 
 Currently, the buddy compiler contains the following two modules:
 
-- buddy-mlir (get started from here)
+- buddy-mlir (get started from [here](https://github.com/buddy-compiler/buddy-mlir))
 
 The buddy-mlir is the MLIR-based domain-specific compiler framework. We use MLIR as the cornerstone and explore how to build a domain-specific compiler on top of it. Our research in this framework includes domain-specific IR and optimization, domain-specific compiler frontend design and implementation, MLIR-related development tools, etc.
 
-- buddy-benchmark (get started from here)
+- buddy-benchmark (get started from [here](https://github.com/buddy-compiler/buddy-benchmark))
 
 The buddy-benchmark is a benchmark framework to evaluate domain-specific compilers and libraries. Evaluation is an essential step in developing a compiler. We can hardly find a unified benchmark to evaluate compiler or optimization in some domains. We thus propose an extensible benchmark framework to collect domain-specific evaluation cases.
 
@@ -39,4 +39,4 @@ The graph below shows the modules of the buddy compiler.
 
 ## Next Steps
 
-If you are interested in our project, you can play around with examples in [buddy-mlir](https://github.com/buddy-compiler/buddy-mlir) and [buddy-benchmark](https://github.com/buddy-compiler/buddy-benchmark). Then you can see if there are [projects in the list](./Pages/OpenProjects.md) that appeal to you, feel free to contact us via [slack](https://join.slack.com/t/buddycompiler/shared_invite/zt-13y6ibj4j-n6MQ8u9yCUPltCCDhLEmXg) for more details. We also provide a [contributor guide](./Pages/ContributorGuide.md) for you if you want to contribute your code.
+If you are interested in our project, you can play around with examples in [buddy-mlir](https://github.com/buddy-compiler/buddy-mlir) and [buddy-benchmark](https://github.com/buddy-compiler/buddy-benchmark). Then you can see if there are [projects in the list](./Pages/OpenProjects.md) that appeal to you; feel free to contact us via [slack](https://join.slack.com/t/buddycompiler/shared_invite/zt-13y6ibj4j-n6MQ8u9yCUPltCCDhLEmXg) for more details. We also provide a [contributor guide](./Pages/ContributorGuide.md) for you if you want to contribute your code.
