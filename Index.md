@@ -19,7 +19,7 @@ With the development of domain-specific architectures and languages, the need fo
 
 MLIR is a revolutionary multi-level intermediate representation and compiler infrastructure that provides reusable and extensible mechanisms. RISC-V is open-sourced instruction set architecture with a modular design, allowing custom extensions. MLIR and RISC-V have extensible concepts for domain-specific design and maximize the reuse of base parts. We thus particularly embrace the MLIR and RISC-V ecosystems for our framework and believe MLIR is a perfect companion for compiler development towards the RISC-V backend. As for the DSL frontend support, we do not have a clear plan and looking forward to more discussion.
 
-Our work is still in the very early stages, and we are currently exploring IR-level optimization and building infrastructures. For more information, please see our work plan and open projects.
+Our work is still in the very early stages, and we are currently exploring IR-level optimization and building infrastructures. For more information, please see our [documents](https://github.com/buddy-compiler/buddy-mlir/tree/main/docs) and [open projects](./Pages/OpenProjects.md).
 
 ## Overview
 
@@ -27,7 +27,7 @@ Currently, the buddy compiler contains the following two modules:
 
 - buddy-mlir (get started from [here](https://github.com/buddy-compiler/buddy-mlir))
 
-The buddy-mlir is the MLIR-based domain-specific compiler framework. We use MLIR as the cornerstone and explore how to build a domain-specific compiler on top of it. Our research in this framework includes domain-specific IR and optimization, domain-specific compiler frontend design and implementation, MLIR-related development tools, etc.
+The buddy-mlir is the MLIR-based domain-specific compiler framework. We use MLIR as the cornerstone and explore how to build a domain-specific compiler on top of it. Our research in this framework includes domain-specific IR and optimization, domain-specific compiler frontend and backend implementation, MLIR-related development tools, etc.
 
 - buddy-benchmark (get started from [here](https://github.com/buddy-compiler/buddy-benchmark))
 
