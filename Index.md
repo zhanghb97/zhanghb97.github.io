@@ -2,16 +2,16 @@
 layout: default
 title: Home
 nav_order: 1
-description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
+description: "Buddy compiler is a domain-specific compiler infrastructure."
 permalink: /
 ---
 
-# Home
+# Buddy Compiler
 
 This is a temporary site to test home page of buddy compiler. 
 
 Buddy compiler is a domain-specific compiler infrastructure. We use "buddy" as the name because our infrastructure intends to be the buddy system to help users easily design, implement, and evaluate domain-specific compilers.
-The buddy compiler community welcomes any ideas. Join us through this slack link if you want to contribute.
+The buddy compiler community welcomes any ideas. Join us through this [slack link](https://join.slack.com/t/buddycompiler/shared_invite/zt-13y6ibj4j-n6MQ8u9yCUPltCCDhLEmXg) if you want to contribute.
 
 ## Motivation
 
@@ -37,25 +37,6 @@ The graph below shows the modules of the buddy compiler.
 
 ![overview](./Images/overview.png)
 
-## Workflow
+## Next Steps
 
-Currently, our efforts are mostly at the IR level, so we provide domain-specific IR operations and functions, wrap them into the C++ library, and use CPU with SIMD extensions as the target machine. Here we demonstrate an end-to-end image processing and classification application of our framework:
-
-- Read image into MemRef container.
-- Perform image processing.
-- Classify the image.
-- Evaluate the performance.
-
-What should be done to support this end-to-end application?
-
-- Provide domain-specific data structure derived from the MemRef container.
-- Define domain-specific MLIR dialect (operations, types, attributes).
-- Implement lowering passes and optimizations towards the domain-specific MLIR dialect.
-- Import the deep learning model into the MLIR function.
-- Define domain-specific functions with MLIR operations.
-- Compile the MLIR files into object files.
-- Wrap C++ interfaces around the MLIR functions.
-- Write a domain-specific application in C++ with the interfaces.
-- Compile the main program and link the object files.
-- Run the program and evaluate the performance.
-
+If you are interested in our project, you can play around with examples in [buddy-mlir](https://github.com/buddy-compiler/buddy-mlir) and [buddy-benchmark](https://github.com/buddy-compiler/buddy-benchmark). Then you can see if there are [projects in the list](./Pages/OpenProjects.md) that appeal to you, feel free to contact us via [slack](https://join.slack.com/t/buddycompiler/shared_invite/zt-13y6ibj4j-n6MQ8u9yCUPltCCDhLEmXg) for more details. We also provide a [contributor guide](./Pages/ContributorGuide.md) for you if you want to contribute your code.
