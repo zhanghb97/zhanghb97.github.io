@@ -8,7 +8,7 @@ permalink: /
 
 # Buddy Compiler
 
-⚠️ This is a temporary site to test the home page of the buddy compiler. 
+⚠️ <font color="red">This is a temporary site to test the home page of the buddy compiler.</font>
 The official home page is [here](https://buddy-compiler.github.io/).
 
 The buddy compiler is a domain-specific compiler infrastructure. We use "buddy" as the name because our infrastructure intends to be the buddy system to help users easily design, implement, and evaluate domain-specific compilers.
