@@ -9,5 +9,3 @@ permalink: Pages/DisplayBoards
 # Display Boards
 
 Currently, we have the following display boards:
-
-- [Sync Status](./SyncStatus.md)
