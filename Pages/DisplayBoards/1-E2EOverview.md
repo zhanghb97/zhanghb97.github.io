@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 1 - End to End Overview
-parent: TutorialsTest
+parent: DisplayBoards
 ---
 
 # End to End Overview

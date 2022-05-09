@@ -3,7 +3,7 @@ layout: default
 title: TutorialsTest
 nav_order: 4
 has_children: true
-permalink: Pages/TutorialsTest
+permalink: Pages/DisplayBoards
 ---
 
 # Tutorials Test
