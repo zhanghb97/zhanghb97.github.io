@@ -7,3 +7,9 @@ parent: Tutorials
 # End to End Overview
 
 TODO
+
+Test GIF:
+
+![](../../Images/vector-simd.gif)
+
+![](../../Images/vector-simd-tail.gif)
